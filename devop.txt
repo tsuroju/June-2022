@@ -1,0 +1,147 @@
+
+1. Tell me about yourself
+I have been working as a DevOps Engineer for past 5 years, I am currently part of a 7 member 
+team working on a migration project in BMO.
+In that role I have taken up activities such as Implementing AWS codepipeline, writing Cloud
+Formation templates to provision the AWS resources like EC2, S3, EBS etc..
+and also for automating cloud deployments and Cloudwatch alerts. 
+I have written playbooks for automated setting up of the entire infrastructure right from the
+ the web tier to the DB tier.
+On the Microservices front, I have used Docker Engine for deploying non-prod environments and 
+Kubernetes as orchestration engine to maintain the docker container on RHEL 
+platforms. 
+I also have strong experience  in using python scripts where I have written it to query the
+ unused resources with an AWS account and 
+do billing optimisation and clean up of unused or stale resources within the account.
+I have been working on DevOps platforms in building up the CI/CD pipelines using Jenkins as
+ the CI tool.
+
+
+I also have experience using ansible for application deployments and environment configuration,
+provisioning high available infrastructure be it cloud or on-prem.
+Recently, I have been using Terraform scripts for provisioning of the environments in AWS where
+I have created Packer script for creating the
+base AMI which contains all the required software packages along with the required configuration
+s that can be spun up anytime using the Terraform script.
+I have used Kubernetes in my client Coastal Financial for deployment of PODs, services and 
+configuring Ingress, ELB, node Port for communication of the 
+microservices over the internet. 
+
+2. Previous Project:
+In my tenure at Storm Applied Technologies, I have been working on DevOps platforms in 
+building up the CI/CD pipelines using Jenkins as the CI tool. I have developed 
+installer scripts using python for configuring and deploying various applications on AWS 
+hosted platforms. I have automated the build and release pipelines within 
+Jenkins using different shell, pipeline DSL declarative scripting. I have used Chef to 
+provision and configure the resources and deploy the build into the target
+ environments. I have also written Chef cookbooks to configure the DB for different applications
+ like Oracle DB for on-prem and RDS instances in the cloud for MySQL, 
+postgreSQL, Aurora DB and Dynamo DB. Configured pipelines for various Java applications 
+to be built using Maven, deployed into Tomcat application servers and tested.
+ I have also managed central repositories for application source codes across different
+ platforms in GIT. I have written python boto3 codes to create AMI within AWS 
+for setting up vulnerability and penetration testing infrastructure to be able to scan 
+different AWS resources in the cloud. I have setup Elastic Cache for 
+applications to improve the performance of the applications and reduce response times.
+ I have optimised billing of the AWS resources but reviewing the resource 
+utilisation through cloud watch and implementing autoscaling groups based on the load 
+on the servers.
+
+3. About AWS:
+
+Scenario 1: One of our applications was showing high billing data on the DataIn and DataOut as
+ the master application was residing in one AWS region and the analytics
+application was residing in another AWS region, this was causing high Data transfer between the 
+applications over the internet. The cost of the Data transfer Out was 
+causing the bill to be 10x times. Me along with the architect have come up with designing a
+ solution to bring the application back into the same region and have the 
+data transfer within the same region and moving the components from public subnets to the
+ private subnets so that the data transfer over the internet is reduced and 
+the billing came down $X/10.
+
+Scenario 2: One of our applications had global users and the application was hosted in the US 
+east regions and the users in the east Asia were facing latency issues 
+because of the distance. In order to solve the issue we have the CloudFront AWS service that
+ actually caches the application by speeding up the distribution of static
+ and dynamic web content to the users. It delivers content through a world wide network of 
+data centres called edge locations. When a user requests, it servers the 
+content through one of its nearest edge location that provides the lowest latency with best possible performance. If the content is not present in that edge location 
+then it retrieves it from an origin that is defined in an S3 bucket which is also present in the same location, we have CRR ( Cross Region Replication) for such 
+buckets so that S3 buckets are replicated across regions.
+
+4. About Jenkins:
+
+Scenario 1: We have setup GIT for our source code management for our applications, we were 
+observing 500 errors in the logs when accessing the repo within the GIT. 
+This was also intermittent, we observed that it was coming during peak hours and it was 
+also not constant, there was no pattern as to when it was happening. 
+We enabled debug logs within GIT and found that the error was coming because of the
+ worker_processes not being available to handle the request within GIT, 
+we have then increased the  configuration of the worker_processes within the unicorn 
+config file and restarted the unicorn server. After this change we kept the 
+server under monitoring for some days and saw no errors at all.
+
+Also, we have implemented some best practices within the team to clone the repo rather
+ than fork the repo which increases the number of connections to the repo.
+
+Full Name: Prithvi Raj Penta
+Location: London, ON
+Contact No: 2269807049
+Email Id: prithvipenta49@gmail.com  
+Visa Status: open work permit
+Are you Incorporated?: no
+Salary Expected : $60/h or 90k/y
+Availability to Start: immediately
+Availability for Interview: weekdays 10am-2pm
+Are you available for face to face Interview?: phone or video
+
+edtanpalli sha - team leader
+ho andrien project manager
+4841 yonge st
+north york
+
+*****************************************************************
+
+
+  
+
+
+My main roles and responsibilities are 
+
+Automating the provisioning of instructure on AWS Cloud using terraforms and configuration management and deployment of application to kubernetes cluster using ansible
+
+Apart from this I also worked on Jenkins for an end to end continuous integration and continuous deployment of applications based on microservice architecture and supposed to be deployed inside open shift and kubernetes and also used both on premise managed using Kubeadm, Kubespray and on cloud solutions like eks in AWS also aks on azure.
+
+Regarding other continuous integration and deployment tools I have used code deploy on Amazon web services and also used spinnaker for CD
+
+On the cloud side I had  worked On AWS.  on AWS I worked on resources like ec2, RDS, ECR, elk, eks, Lambda, cloudfront, elastic cache, redis cluster, S3 bucket, dynamodb, IAM uses rules and policy management, security groups, routing configuration Etc
+
+I have also worked on the creation of helm charts for continuous deployment of microservices on openshift cluster and deployment using ansible
+
+Regarding monitoring tools  I worked on Prometheus and grafana for POD  level monitoring and alerting for kubernetes cluster
+
+ I also worked on elasticsearch,  logstash and kibana  so I have worked on  setting up The ELK stack inside kubernetes. I also set up the filebeat  on various servers and also in openshift as a  daemon set for shipping the log to logstash 
+
+this is what I have mainly did in terms of my recent and previous project experience
+
+LAST PROJECT:::
+
+
+In my last project it was totally based on microservices architecture where all the applications for running inside kubernetes and we were using Amazon web services for the  infrastructure  part and we were using elastic kubernetes service from Amazon web services.
+ 	For continuous integration and continuous deployment using Jenkins and also using terraform for provisioning the  infrastructure and Ansible for doing the configuration management and doing the deployment of applications to the cluster. We have designed the shared libraries to manage the deployment release for the application. Also we have configured the logging and monitoring solution for the platform using elk stack and Prometheus grafana. so it was around 100 microservices in total running around 14 namespaces in total 
+
+CICD::
+
+Let me just brief you about the continuous integration and continuous deployment in my previous project 
+so it was mainly on Jenkins and it was groovy pipelines so I just designed the pipeline.
+
+For The Continuous integration and continuous deployment I have written the Java application in which I have declared the multiple stages starting from the code compilation and building of Jar using maven and there after creation of Docker image using dockerfile which we used to store in the code repo itself and then pushing of those images to the artifactory and then declaring the stages to call the helm charts through the ansible playbook to do the deployments.
+
+So  end-to-end automation work was done through the Jenkins pipeline itself and we were calling the Playbook through the pipelines to deploy the application to kubernetes.
+ 
+So the code compilation was done thereafter we need to do the unit testing which was written by the developer and the scanning of Docker images through clair for the vulnerability.
+
+once the developer commits the code we have set up the webhook which Auto triggers the respective application pipeline.
+
+ so this was how CD process was carried out with Jenkins
+
